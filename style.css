@@ -1,0 +1,48 @@
+body{
+    background-color:aquamarine ;
+}
+
+div{
+    text-align: center;
+}
+
+@media (max-width:1440px){
+    body{
+        background-color: green;
+    }
+    div::after{
+        content:"Screen Size: 1440px";
+    }
+}
+
+@media (max-width:1024px){
+    body{
+        background-color:rgb(175, 96, 39);
+    }
+    div::after{
+        content:"Screen Size: 1024px";
+    }
+}
+
+@media (max-width:768px){
+    body{
+        background-color:aqua;
+    }
+    div::after{
+        content:"Screen Size: 768px";
+    }
+
+    div::before{
+        content:"Ye hai khalnayak";
+    }
+
+}
+
+@media (max-width:425px){
+    body{
+        background-color:red;
+    }
+    div::after{
+        content:"Screen Size: 425px";
+    }
+}
